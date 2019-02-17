@@ -1,0 +1,223 @@
+/*@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Bold.ttf');
+    src: url('../fonts/Raleway/Raleway-ExtraBold.ttf');
+    src: url('../fonts/Raleway/Raleway-Medium.ttf');
+    src: url('../fonts/Raleway/Raleway-Regular.ttf');
+    src: url('../fonts/Raleway/Raleway-SemiBold.ttf');
+}*/
+
+/*
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-ExtraLight.ttf');
+    src: url('../fonts/Montserrat/Montserrat-Light.ttf');
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.main-header {
+    background-image: url(../img/main-header-photo.jpg);
+    width: 100%;
+    min-height: 1024px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-navigation {
+    width: 1170px;
+    position: fixed;
+    top: 40px;
+}
+
+.header-navigation:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.logo {
+    display: block;
+    width: 115px;
+    float: left;
+    margin:  8.5px 219px 8.5px 0;
+    padding: 0 0 0 66px;
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    position: relative;
+}
+
+.logo:before {
+    content: "";
+    width: 64px;
+    height: 56px;
+    position: absolute;
+    top: -9px;
+    left: 0px;
+    background-image: url(../img/logos.png);
+}
+
+.menu {
+    list-style-type: none;
+    width: 637px;
+    float: left;
+    padding: 0;
+    margin: 19px 0 19px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-items a {
+    text-decoration: none;
+    font-family: Montserrat;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.menu-items a:hover {
+    color:  #c7b29a;
+}
+
+.cart-icon {
+    display: block;
+    width: 18px;
+    height: 24px;
+    background-image: url(../img/icon-cart.png);
+    float: left;
+    margin: 16px 0 16px 63px;
+}
+
+.search-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icon-search.png);
+    float: left;
+    margin: 16px 0 16px 28px;
+}
+
+.main-header-wrapper {
+    width: 100%;
+    min-height: 1024px; /*color= rgba(107, 88, 79, 0.7);*/
+    background-color:  rgba(17, 17, 17, 0.7);
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header:hover .main-header-wrapper {
+    visibility: visible;
+}
+
+.main-header-slider {
+    width: 1620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-text {
+    width: 589px;
+    display: flex;
+    flex-direction: column;
+    min-height: 261px;
+    align-items: center;
+}
+
+.arrow-next, .arrow-prew {
+    display: block;
+    text-decoration: none;
+    color:  #ffffff;
+}
+
+.arrow-next:hover, .arrow-prew:hover {
+    color:  #d3c1ad;
+}
+
+.arrow-next:active, .arrow-prew:active {
+    color:  red;
+}
+
+.unique-design {
+    display: block;
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+.portfolio-template {
+    margin: 0;
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 19px;
+}
+
+.paragraph-text {
+    margin: 0;
+    font-family: Montserrat;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 52px;
+}
+
+.slider-btn {
+    display: block;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color:  #998675;
+    box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.1);
+    width: 170px;
+    height: 53px;
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.slider-btn:hover {
+    color:  #998675;
+    background-color: #ffffff;
+}
+
+.slider-btn:active {
+    box-shadow: inset 0px 5px 0px 0px rgba(0,0,0,0.1);
+    background-color: red;
+    color: #ffffff;
+}
